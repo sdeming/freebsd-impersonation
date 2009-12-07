@@ -1,0 +1,14 @@
+User Impersonation in FreeBSD, by Scott Deming
+
+This was a research project I did a number of years ago. The idea was to
+quickly switch from one uid to another and then back again during the
+execution of any process, via a simple system call. Under the hood a 
+simple kernel module (kld) would take care of house-keeping and security
+by enforcing a specific set of rules.
+
+The original PDF document for this project is included here as uimp.pdf
+though it is missing a couple of images.
+
+All of this code is released under the MIT license. Feel free to do as you
+wish.
+

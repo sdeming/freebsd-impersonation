@@ -1,0 +1,10 @@
+#!/bin/sh
+
+# deny everyone
+./impadm add 50000 deny all all
+
+# allow apache to impersonate everyone (!!)
+./impadm add 1000 allow apache all
+
+# deny apache from impersonating root
+./impadm add 500 deny apache root

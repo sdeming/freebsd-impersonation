@@ -1,0 +1,112 @@
+#!/bin/sh
+
+go()
+{
+  lynx -dump $* > /dev/null &
+}
+
+cat << EOF | while read url; do go $url ; done
+  http://phptest1/system.php
+  http://phptest2/system.php
+  http://phptest3/system.php
+  http://phptest4/system.php
+  http://phptest1/system.php
+  http://phptest2/system.php
+  http://phptest3/system.php
+  http://phptest4/system.php
+  http://phptest1/system.php
+  http://phptest2/system.php
+  http://phptest3/system.php
+  http://phptest4/system.php
+  http://phptest1/system.php
+  http://phptest2/system.php
+  http://phptest3/system.php
+  http://phptest4/system.php
+  http://phptest1/system.php
+  http://phptest2/system.php
+  http://phptest3/system.php
+  http://phptest4/system.php
+  http://phptest1/system.php
+  http://phptest2/system.php
+  http://phptest3/system.php
+  http://phptest4/system.php
+  http://phptest1/system.php
+  http://phptest2/system.php
+  http://phptest3/system.php
+  http://phptest4/system.php
+  http://phptest1/system.php
+  http://phptest2/system.php
+  http://phptest3/system.php
+  http://phptest4/system.php
+  http://phptest1/system.php
+  http://phptest2/system.php
+  http://phptest3/system.php
+  http://phptest4/system.php
+  http://phptest1/system.php
+  http://phptest2/system.php
+  http://phptest3/system.php
+  http://phptest4/system.php
+  http://phptest1/system.php
+  http://phptest2/system.php
+  http://phptest3/system.php
+  http://phptest4/system.php
+  http://phptest1/system.php
+  http://phptest2/system.php
+  http://phptest3/system.php
+  http://phptest4/system.php
+  http://phptest1/system.php
+  http://phptest2/system.php
+  http://phptest3/system.php
+  http://phptest4/system.php
+  http://phptest1/system.php
+  http://phptest2/system.php
+  http://phptest3/system.php
+  http://phptest4/system.php
+  http://phptest1/system.php
+  http://phptest2/system.php
+  http://phptest3/system.php
+  http://phptest4/system.php
+  http://phptest1/system.php
+  http://phptest2/system.php
+  http://phptest3/system.php
+  http://phptest4/system.php
+  http://phptest1/system.php
+  http://phptest2/system.php
+  http://phptest3/system.php
+  http://phptest4/system.php
+  http://phptest1/system.php
+  http://phptest2/system.php
+  http://phptest3/system.php
+  http://phptest4/system.php
+  http://phptest1/system.php
+  http://phptest2/system.php
+  http://phptest3/system.php
+  http://phptest4/system.php
+  http://phptest1/system.php
+  http://phptest2/system.php
+  http://phptest3/system.php
+  http://phptest4/system.php
+  http://phptest1/system.php
+  http://phptest2/system.php
+  http://phptest3/system.php
+  http://phptest4/system.php
+  http://phptest1/system.php
+  http://phptest2/system.php
+  http://phptest3/system.php
+  http://phptest4/system.php
+  http://phptest1/system.php
+  http://phptest2/system.php
+  http://phptest3/system.php
+  http://phptest4/system.php
+  http://phptest1/system.php
+  http://phptest2/system.php
+  http://phptest3/system.php
+  http://phptest4/system.php
+  http://phptest1/system.php
+  http://phptest2/system.php
+  http://phptest3/system.php
+  http://phptest4/system.php
+EOF
+
+echo blasted, now waiting.
+wait
